@@ -102,7 +102,8 @@ serverResponse=50&domUpdate=60
 </ul>
 
 <p>Мы подумали: <q>А что если хранить где-то старую версию файлов, а при выходе новой
-передавать только diff между ней и той, которая сохранена у пользователя?</q> В браузере же останется просто наложить патч на клиенте.</p>
+передавать только diff между ней и той, которая сохранена у пользователя?</q> В браузере же останется
+просто наложить патч на клиенте.</p>
 
 <p>На самое деле эта идея не нова. Уже существуют стандарты для HTTP — например,
 RFC 3229 «Delta encoding in HTTP» и «Google SDHC», — но по разным причинам они
@@ -174,9 +175,14 @@ RFC 3229 «Delta encoding in HTTP» и «Google SDHC», — но по разны
 инициализировать <var>H<sub>0</sub></var>
 <var>k</var>=0
 <strong>while</strong> ||&nabla;<var>&fnof;<sub>k</sub></var>|| &gt; <var>&epsilon;</var> 
-	найти направление <var>p<sub>k</sub></var> = &ndash;<var>C<sub>k</sub></var>&nabla;<var>f<sub>k</sub></var> 
-	вычислить <var>x<sub>k+1</sub></var> = <var>x<sub>k</sub></var> + <var>&alpha;<sub>k</sub></var><var>p<sub>k</sub></var>, <var>&alpha;<sub>k</sub></var> удовлетворяет всем условиям Вольфе
-	обозначить <var>s<sub>k</sub></var> = <var>x<sub>k+1</sub></var> &ndash; <var>x<sub>k</sub></var> и <var>y<sub>k</sub></var> = &nabla; <var>f<sub>k+1</sub></var> &ndash; &nabla;<var>f<sub>k</sub></var>
+	найти направление <var>p<sub>k</sub></var> = &ndash;<var>C<sub>k</sub></var>&nabla;
+	<var>f<sub>k</sub></var>
+	вычислить <var>x<sub>k+1</sub></var> = <var>x<sub>k</sub></var> + <var>&alpha;
+		<sub>k</sub></var><var>p<sub>k</sub></var>, <var>&alpha;<sub>k</sub>
+		</var> удовлетворяет всем условиям Вольфе
+	обозначить <var>s<sub>k</sub></var> = <var>x<sub>k+1</sub></var> &ndash; <var>x<sub>k</sub>
+	</var> и <var>y<sub>k</sub></var> = &nabla; <var>f<sub>k+1</sub></var> &ndash; &nabla;
+	<var>f<sub>k</sub></var>
 	вычислить <var>C<sub>k+1</sub></var>
 <var>k</var> = <var>k + 1</var>
 <strong>end</strong> 
